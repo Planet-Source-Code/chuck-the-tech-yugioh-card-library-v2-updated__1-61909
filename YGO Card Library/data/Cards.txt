@@ -1,0 +1,26 @@
+Card Frame
+
+1 = Effect
+2 = Fusion
+3 = Normal
+4 = Ritual
+5 = Magic
+6 = Trap
+
+Card Icons
+
+1 = Star
+2 = Dark
+3 = Earth
+4 = Fire
+5 = Light
+6 = Water
+7 = Wind
+8 = Magic
+9 = Trap
+10 = Continuous
+11 = Counter
+12 = Equip
+13 = Field
+14 = Quick-Play
+15 = Ritual

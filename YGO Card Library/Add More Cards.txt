@@ -1,0 +1,109 @@
+For More info about the Yu-Gi-Oh TCG visit www.yugioh-card.com
+
+
+How To Add More Cards
+
+In the "Data" directory right-click on cards.dat and select open with
+
+Choose the notepad program
+
+the setup is
+
+Library Number=Frame|Name|Attribute|Icon|Type|Description|Level|Cost|Attack|Deffence
+
+"Library Number" is the next number
+
+"Frame" is an integer value from 1 to 6
+
+[Frame]
+1 = Effect
+2 = Fusion
+3 = Normal
+4 = Ritual
+5 = Magic
+6 = Trap
+
+"Name" is the card Name
+
+"Attribute" is an integer value from 2 to 9
+	1 was initialy used, but is not anymore
+
+[Attribute]
+2 = Dark
+3 = Earth
+4 = Fire
+5 = Light
+6 = Water
+7 = Wind
+8 = Magic
+9 = Trap
+
+"Icon" is a string value. Used for Magic(Spell) and Trap Cards
+Continuous
+Equip
+Ritual
+Quick-Play
+Counter
+Field
+
+
+"Type" is the card type.  If card is Magic(Spell), you must put "Magic" as the card type
+			  If card is a Trap, you must put "Trap" as the card type
+
+"Description" is the Card Description or Effect Text
+
+"Level" is an integer value from 1 to 12
+
+"Cost" is an integer value that reflects how many monsters are required as a tribute to summon a certain monster
+
+"Attack" is an integer value of ATK on the card
+"Deffence" is an integer value of DEF on the card
+
+Example:
+103=2|Metal Dragon|7||Machine|"Steel Ogre Grotto #1" + "Lesser Dragon"|6||1850|1700
+
+103: Library Card Number
+2: Frame is Fusion
+Metal Dragon: Card Name
+7: Wind Attribute
+No Icon
+Machine: Card Type
+"Steel Ogre Grotto #1" + "Lesser Dragon": Text in Description Box
+6: Monster Level
+No Cost because it is a fusion monster
+1850: ATK Value
+1700: Defence Value
+
+There must be 9 "|" seperators for the card or program will error
+
+
+
+The "MaxCard" value must be the number of cards available in the library
+
+The "iList" Values must be in multiples of 9
+The "iList' values are used to tell the program when to stop displaying the down scroll arrow
+
+iListAll is for when All Cards are displayed
+iListNor is for when just Normal Monsters are displayed
+iListEff is for when just Effect Monsters are displayed
+iListFus is for when just Fusion Monsters are displayed
+iListRit is for when just Ritual Monsters are displayed
+iListMag is for when just Magic(Spell) cards are displayed
+iListTrp is for when just Trap Cards are displayed
+
+
+The [Frames] and [Attributes] sections are just for reference. they don't affect the program
+
+
+Adding Pictures
+
+There are 2 pictures for each card:
+	1 large picture in the card_pics directory that is 200 x 290
+	1 small picture in the card_pics\small directory theat is 50 x 72
+
+Each picture must be in JPG format
+Each picture's filename MUST be that same as the name value in the cards.dat file + .jpg
+
+If you have any questions, please feel free to ask
+
+This code can give details of cards from the Yu-Gi-Oh! TGC and card pictures.  Right now it only has cards from the LOB(Legend of Blue-Eyes White Dragon) expansion set.  I will add more sets when I finish typing them up.  You can also sort the cards by Normal, Effect, Fusion, Ritual (No cards available), Magic(Spell), and Trap.  I might add other sorting methods later.  As of now the program is complete. I have done a lot of testing to make sure there are no bugs.  If you discover a problem(bug), please feel free to let me know.  If you're feeling daring enough, you can add you own cards to the library. I have included instructions on how to do so.  The only 2 requirements are that you need to have RICHTX32.ocx and MSCOMCTL.ocx installed
